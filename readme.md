@@ -2,9 +2,9 @@
 
 * 使用下面两个类的setSpan()方法设置不同的样式Span来实现富文本：
 
-SpannableString - 构造对象时必须传入一个字符串String，之后内容无法改变
+SpannableString - 实例化对象时必须传入一个字符串String，之后内容无法改变
 
-SpannableStringBuilder - 构造时可以不传入一个String字符串，而使用append方法类添加内容，可以动态拼接多个字符串String
+SpannableStringBuilder - 实例化对象时可不传入一个String字符串，而用append()来添加内容，可动态拼接多个字符串String
 
 * **setSpan(Object what, int start, int end, int flags);**
 
