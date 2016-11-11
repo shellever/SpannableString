@@ -179,6 +179,7 @@ private void showAutoLinkTextView() {
 ## Links
 
 [SpannableString与SpannableStringBuilder][1]
+
 [android - SpannableString或SpannableStringBuilder以及string.xml文件中的整型和string型代替][2]
 
 [1]: http://blog.csdn.net/harvic880925/article/details/38984705
