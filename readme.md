@@ -3,15 +3,18 @@
 * 使用下面两个类的setSpan()方法设置不同的样式Span来实现富文本：
 
 SpannableString - 构造对象时必须传入一个字符串String，之后内容无法改变
+
 SpannableStringBuilder - 构造时可以不传入一个String字符串，而使用append方法类添加内容，可以动态拼接多个字符串String
 
 * **setSpan(Object what, int start, int end, int flags);**
 
 **函数说明：**
+
 给SpannableString或SpannableStringBuilder指定范围内的字符串设定Span样式，可以设置多个Span样式，
 flags参数标识了当在所标记范围前和标记范围后紧贴着插入新字符时的动作，即是否对新插入的字符应用同样的样式。
 
 **参数说明：**
+
 object what：对应的各种Span样式
 
 int start：开始应用指定Span的位置，索引从0开始
@@ -43,8 +46,11 @@ Linkify.ALL             - 识别出所有系统所支持的特殊URI，然后做
 ## String/SpannableString/SpannableStringBuilder的类图
 
 从类图中可以清晰的看出：
+
 1. SpannableString实现了Spannable接口，而Spannable接口定义了可变标记的操作集，用于关联或分离标记对象，故SpannableString必须在实例化对象时传入文本内容，实例化后就不能改变其文本内容，只能设置文本的标记对象，即Span样式；
+
 2. SpannableStringBuilder实现Spannable接口的同时也实现了Editable接口，而Editable定义了可变标记和可变文本内容的操作集，故SpannableStringBuilder可以在实例化对象时不传入文本内容，而使用append()方法类逐步添加内容，并通过setSpan()方法设置Span样式。
+
 3. String、SpannableString和SpannableStringBuilder同时实现了CharSequence接口，都可以实现字符的操作。
 
 ![uml_class_spannable_string.png](./docs/uml_class_spannable_string.png)
