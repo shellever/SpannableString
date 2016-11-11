@@ -174,7 +174,7 @@ private void showAutoLinkTextView() {
 
 #### 效果演示
 
-![spannable_string_linkify.gif](./docs/spannable_string_linkify.gif)
+![spannable_string_linkify_5m.gif](./docs/spannable_string_linkify_5m.gif)
 
 ## Links
 
