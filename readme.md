@@ -19,7 +19,7 @@ object what：对应的各种Span样式
 
 int start：开始应用指定Span的位置，索引从0开始
 
-int end：结束应用指定Span的位置，特效并不包括这个位置。比如如果这里数为3（即第4个字符），第4个字符不会有任何特效
+int end：结束应用指定Span的位置，作用范围为[start, end)
 
 int flags：
 
