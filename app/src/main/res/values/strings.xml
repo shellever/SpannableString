@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SpannableString</string>
+    <string name="text_nothing">Nothing</string>
+    <string name="text_set">Set</string>
+    <string name="text_reset">Reset</string>
+    <string name="text_span_flags">EXCLUSIVE_INCLUSIVE</string>
+    <string name="text_foreground_color_span">ForegroundColorSpan</string>
+    <string name="text_background_color_span">BackgroundColorSpan</string>
+    <string name="text_absolute_size_span">AbsoluteSizeSpan</string>
+    <string name="text_relative_size_span">RelativeSizeSpan</string>
+    <string name="text_type_face_span">TypefaceSpan</string>
+    <string name="text_style_span">StyleSpan</string>
+    <string name="text_strikethrough_span">StrikethroughSpan</string>
+    <string name="text_underline_span">UnderlineSpan</string>
+    <string name="text_image_span">ImageSpan</string>
+    <string name="text_happy">快乐</string>
+</resources>

@@ -1,0 +1,73 @@
+@startuml
+
+
+interface CharSequence
+interface Appendable
+
+
+interface Spanned
+CharSequence <|-- Spanned : extends
+
+
+interface Spannable
+Spanned <|-- Spannable : extends
+
+
+interface Editable
+CharSequence <|-- Editable : extends
+Spannable <|-- Editable : extends
+Appendable <|-- Editable : extends
+
+
+class SpannableString
+Spannable <|.. SpannableString : implements
+CharSequence <|.. SpannableString : implements
+
+
+class SpannableStringBuilder
+Spannable <|.. SpannableStringBuilder : implements
+CharSequence <|.. SpannableStringBuilder : implements
+Editable <|.. SpannableStringBuilder : implements
+Appendable <|.. SpannableStringBuilder : implements
+
+
+class String <<final>>
+CharSequence <|.. String : implements
+
+
+note top of Editable
+Editable for mutable text.
+This is the interface for text
+whose content and markup
+can be changed.
+end note
+
+
+note left of Spanned
+This is the interface for text that
+has markup objects attached to
+ranges of it.
+end note
+
+
+note left of Spannable
+Spannable for mutable markup.
+This is the interface for text
+to which markup objects can be
+attached and detached.
+end note
+
+
+note left of SpannableStringBuilder
+This is the class for text whose content
+and markup can both be changed.
+end note
+
+
+note right of SpannableString
+This is the class for text whose content
+is immutable but to which markup objects
+can be attached and detached.
+end note
+
+@enduml
