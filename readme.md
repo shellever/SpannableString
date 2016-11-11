@@ -15,7 +15,7 @@ flags参数标识了当在所标记范围前和标记范围后紧贴着插入新
 
 **参数说明：**
 
-object what：对应的各种Span样式
+Object what：对应的各种Span样式
 
 int start：开始应用指定Span的位置，索引从0开始
 
@@ -57,7 +57,7 @@ Linkify.ALL             - 识别出所有系统所支持的特殊URI，然后做
 
 ## Span样式设置示例
 
-1. setSpan()方法参数flags中INCLUSIVE和EXCLUSIVE区别
+1. setSpan()方法参数flags中`INCLUSIVE`和`EXCLUSIVE`区别
 
     ```java
     mSpanFlagsTv = (TextView) findViewById(R.id.tv_span_flags);
